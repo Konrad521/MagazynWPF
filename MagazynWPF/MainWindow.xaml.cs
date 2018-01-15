@@ -41,7 +41,7 @@ namespace MagazynWPF
             else
             {
                 lblMagazyn1.Content = String.Format("Nazwa: {0} Liczba: {1}", m.Nazwa, m.LiczbaNarzedzi);
-                lblMagazyn.Content = String.Empty;
+                lblMagazyn.Content = String.Empty; 
             }
         }
     }
