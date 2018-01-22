@@ -46,7 +46,7 @@ namespace MagazynWPF
         public void Zapisz()
         {
             XmlSerializer xs = new XmlSerializer(typeof(Magazyn));
-            FileStream plik = File.Create(this.Nazwa + ".xml");
+            FileStream plik = File.Create("Magazyny/" + this.Nazwa + ".xml");
 
             xs.Serialize(plik, this);
             plik.Close();
@@ -55,7 +55,7 @@ namespace MagazynWPF
         public static Magazyn Odczytaj(string nazwa)
         {
             XmlSerializer xs = new XmlSerializer(typeof(Magazyn));
-            string NazwaPliku = nazwa + ".xml";
+            string NazwaPliku = "Magazyny/" + nazwa + ".xml";
             if (File.Exists(NazwaPliku))
             {
                 StreamReader plik = new StreamReader(NazwaPliku);

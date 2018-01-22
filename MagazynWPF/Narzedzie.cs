@@ -16,6 +16,7 @@ namespace MagazynWPF
             Cena = cena;
             Opis = opis;
         }
+        
 
         public Narzedzie()
         {
@@ -30,5 +31,6 @@ namespace MagazynWPF
         {
             return String.Format("{0} {1} {2} {3}", this.NrSeryjny, this.Nazwa, this.Cena, this.Opis);
         }
+        
     }
 }
