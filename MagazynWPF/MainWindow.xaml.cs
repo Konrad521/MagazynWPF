@@ -55,7 +55,7 @@ namespace MagazynWPF
 
         }
 
-        private void btnPokaz_Click(object sender, RoutedEventArgs e)
+        public void btnPokaz_Click(object sender, RoutedEventArgs e)
         {
             string nazwa = cmbMagazyny.SelectedValue.ToString();
             m = Magazyn.Odczytaj(nazwa);
@@ -112,6 +112,56 @@ namespace MagazynWPF
         {
             MagazynWindow mw = new MagazynWindow(this);
             mw.Show();
+        }
+
+        private void Edytuj_Click(object sender, RoutedEventArgs e)
+        {
+           string nazwa = cmbMagazyny.SelectedValue.ToString();
+    
+            if (string.IsNullOrEmpty(nazwa))
+            {
+                
+                MessageBox.Show("Nie wybrano magazynu!");
+            }
+
+            else
+            {
+
+                
+                m = Magazyn.Odczytaj(nazwa); 
+                
+                m.Edytuj(m);
+
+                MagazynWindowEdytuj mwe = new MagazynWindowEdytuj(this);
+                mwe.Show();
+            }
+
+        }
+
+        private void Skasuj_Click(object sender, RoutedEventArgs e)
+        {
+            
+
+            string nazwa = cmbMagazyny.SelectedValue.ToString();
+
+            if (string.IsNullOrEmpty(nazwa))
+            {
+
+                MessageBox.Show("Nie wybrano magazynu!");
+            }
+
+            else
+            {
+
+                m = Magazyn.Odczytaj(nazwa);
+
+                m.Edytuj(m);
+
+                MagazynyBinding();
+
+                m.Zapisz();
+                
+            }
         }
     }
 }

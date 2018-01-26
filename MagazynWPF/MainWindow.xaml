@@ -11,13 +11,15 @@
         <Button x:Name="btnPokaz" Content="Pokaż" HorizontalAlignment="Left" Margin="325,17,0,0" VerticalAlignment="Top" Width="75" Click="btnPokaz_Click" />
         <Label x:Name="lblMagazyn" Content="" HorizontalAlignment="Left" Margin="144,50,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.233,-0.355"/>
         <DataGrid Name="dgNarzedzia" AutoGenerateColumns="true" HorizontalAlignment="Left" Height="139" Margin="22,141,0,0" VerticalAlignment="Top" Width="291">
-            
+
         </DataGrid>
         <Label x:Name="lblMagazyn1" Content="Nazwa:                    Liczba:" HorizontalAlignment="Left" Margin="22,95,0,0" VerticalAlignment="Top"/>
         <Button Content="Dodaj" HorizontalAlignment="Left" Margin="334,141,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <Button Content="Usuń" HorizontalAlignment="Left" Margin="334,184,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
         <Button Content="Nowy" HorizontalAlignment="Left" Margin="325,50,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
         <ComboBox x:Name="cmbMagazyny" HorizontalAlignment="Left" Margin="144,14,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Edytuj" Content="Edytuj" HorizontalAlignment="Left" Margin="325,80,0,0" VerticalAlignment="Top" Width="75" Click="Edytuj_Click"/>
+        <Button x:Name="Skasuj" Content="Skasuj magazyn" HorizontalAlignment="Left" Margin="212,80,0,0" VerticalAlignment="Top" Width="101" Click="Skasuj_Click"/>
 
     </Grid>
 </Window>

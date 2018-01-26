@@ -51,6 +51,14 @@ namespace MagazynWPF
             xs.Serialize(plik, this);
             plik.Close();
         }
+        public void Edytuj(Magazyn m)
+        {
+           
+            Odczytaj(m.Nazwa);
+              
+            File.Delete("Magazyny/" + m.Nazwa + ".xml");
+
+        }
 
         public static Magazyn Odczytaj(string nazwa)
         {

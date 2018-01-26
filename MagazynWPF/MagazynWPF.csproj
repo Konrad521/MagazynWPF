@@ -58,6 +58,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="MagazynWindowEdytuj.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,6 +73,9 @@
     <Compile Include="Magazyn.cs" />
     <Compile Include="MagazynWindow.xaml.cs">
       <DependentUpon>MagazynWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MagazynWindowEdytuj.xaml.cs">
+      <DependentUpon>MagazynWindowEdytuj.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
