@@ -130,7 +130,7 @@ namespace MagazynWPF
                 
                 m = Magazyn.Odczytaj(nazwa); 
                 
-                m.Edytuj(m);
+                m.Skasuj(m);
 
                 MagazynWindowEdytuj mwe = new MagazynWindowEdytuj(this);
                 mwe.Show();
@@ -155,7 +155,7 @@ namespace MagazynWPF
 
                 m = Magazyn.Odczytaj(nazwa);
 
-                m.Edytuj(m);
+                m.Skasuj(m);
 
                 MagazynyBinding();
 

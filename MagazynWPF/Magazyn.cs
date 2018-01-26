@@ -51,7 +51,7 @@ namespace MagazynWPF
             xs.Serialize(plik, this);
             plik.Close();
         }
-        public void Edytuj(Magazyn m)
+        public void Skasuj(Magazyn m)
         {
            
             Odczytaj(m.Nazwa);
